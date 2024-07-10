@@ -1,0 +1,21 @@
+.cont{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.box{
+    display: grid;
+    align-content: center;
+}
+
+.letter{
+    font-size: 3em;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    opacity: 0;
+    transition: opacity .25s linear;
+}

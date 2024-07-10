@@ -1,0 +1,7 @@
+header{
+    display: grid;
+    grid-template: 75px / 160px calc(95% - 181px);
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}

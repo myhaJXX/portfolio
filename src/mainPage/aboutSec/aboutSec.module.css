@@ -1,0 +1,24 @@
+.cont{
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 75px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.link{
+    width: fit-content;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #424242;
+    transform: rotateZ(-90deg);
+    transition: all .4s linear;
+}
+
+.link:hover{
+    color: #ab68d8;
+}

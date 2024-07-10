@@ -1,0 +1,90 @@
+.main{
+    height: calc(100vh - 75px);
+    display: grid;
+    grid-template: 70% calc(30% - 5vh) / 12.5% 82.5%;
+    justify-content: center;
+}
+
+.buttons-cont{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons-cont>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    background-color: transparent;
+    transition: all .4s linear;
+    cursor: pointer;
+}
+
+.buttons-cont>button::before{
+    content: " ";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    transition: all .4s linear;
+}
+
+.buttons-cont>button:hover{
+    border-color: #ad68d8;
+}
+
+.buttons-cont>button:hover::before{
+    background-color: #ab68d8;
+}
+
+.number-cont{
+    height: fit-content;
+    width: 75px;
+    border-bottom: 4px solid #fff;
+    align-self: flex-end;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+.number-line{
+    right: 0;
+    top: 0;
+    width: fit-content;
+    position: absolute;
+    display: grid;
+    transition: all .4s linear;
+}
+
+.number{
+    font-size: 4em;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    line-height: 80px;
+    color: #fff;
+}
+
+.slider-cont{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s linear;
+}
+
+.section{
+    position: relative;
+}
